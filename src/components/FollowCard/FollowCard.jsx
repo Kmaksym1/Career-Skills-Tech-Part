@@ -1,8 +1,14 @@
-const { ButtonAddRemove } = require("components/FollowButton/FollowButton")
-const { AvatarWrapper, Avatar, MidleLine, FollowBox, Tweets } = require("components/UserCards/UserCards.styled")
+import { ButtonAddRemove } from "components/FollowButton/FollowButton";
+import { Avatar, AvatarWrapper, FollowBox, MidleLine, Tweets } from "./FollowCard.styled";
 
-export const FollowCard = ({avatar, id, user, tweets, followers, isFollow}) => {
+
+
+
+export const FollowCard = ({item}) => {
+    const { avatar, id, user, tweets, followers, isFollow } = item;
+    console.log("id", id)
     
+    let formattedFollowers = followers.toLocaleString('en-US');
     return (
         <>
          <AvatarWrapper>
@@ -18,7 +24,7 @@ export const FollowCard = ({avatar, id, user, tweets, followers, isFollow}) => {
   <FollowBox>
     
     <Tweets>{tweets} tweets</Tweets>
-    <Tweets>{followers} Followers</Tweets>
+    <Tweets>{formattedFollowers} Followers</Tweets>
     
     <ButtonAddRemove
       id={id}
@@ -28,9 +34,5 @@ export const FollowCard = ({avatar, id, user, tweets, followers, isFollow}) => {
     </ButtonAddRemove>
   </FollowBox>
         </>
-
     ) 
-    
-    
-   
 }

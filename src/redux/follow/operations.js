@@ -14,11 +14,28 @@ export const fetchUsersCards = createAsyncThunk(
   'follow/fetchUsersCards',
   async (page, thunkAPI) => {
     try {
-        const resp = await axios.get(`/users?limit=3&page=${page}`);
-
+      
+      const resp = await axios.get(`/users/?limit=3&page=${page}`);
+  
       return resp.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
     }
   },
+);
+
+export const addToFollow = createAsyncThunk(
+  'follow/addToFollow',
+  async ({ id, isFollow, followers }, thunkAPI) => {
+    try {
+      const resp = await axios.put(`/users/${id}`, {
+        isFollow: !isFollow,
+        followers: !isFollow ? followers + 1 : followers - 1,
+      });
+      console.log('followers resp.data', resp.data);
+      return resp.data;
+    } catch (e) {
+      return thunkAPI.rejectWithValue(e.message);
+    }
+  }
 );

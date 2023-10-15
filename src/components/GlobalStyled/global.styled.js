@@ -47,7 +47,7 @@ html {
 :root {
   --font-main: 'Montserrat', sans-serif;
   --color-main-darktheme: white;
-  --bg-color-main-darktheme: green;
+  --bg-color-main-darktheme: white;
   --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
