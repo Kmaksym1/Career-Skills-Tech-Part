@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Career-Skills-Tech-Part/static/css/main.b5320759.css",
+    "main.js": "/Career-Skills-Tech-Part/static/js/main.ecca010e.js",
+    "static/media/Montserrat-SemiBold.ttf": "/Career-Skills-Tech-Part/static/media/Montserrat-SemiBold.93b37a465fc4ec0d0415.ttf",
+    "static/media/Montserrat-Medium.ttf": "/Career-Skills-Tech-Part/static/media/Montserrat-Medium.b8c6753baa964ccac1ba.ttf",
+    "static/media/imgBg@2x.png": "/Career-Skills-Tech-Part/static/media/imgBg@2x.12ebce38478b3e0f463c.png",
+    "static/media/imgBg@1x.png": "/Career-Skills-Tech-Part/static/media/imgBg@1x.f806b1c317daafc189c6.png",
+    "index.html": "/Career-Skills-Tech-Part/index.html",
+    "main.b5320759.css.map": "/Career-Skills-Tech-Part/static/css/main.b5320759.css.map",
+    "main.ecca010e.js.map": "/Career-Skills-Tech-Part/static/js/main.ecca010e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5320759.css",
+    "static/js/main.ecca010e.js"
+  ]
+}
