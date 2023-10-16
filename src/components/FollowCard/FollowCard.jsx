@@ -6,8 +6,6 @@ import { Avatar, AvatarWrapper, FollowBox, MidleLine, Tweets } from "./FollowCar
 
 export const FollowCard = ({item}) => {
     const { avatar, id, user, tweets, followers, isFollow } = item;
-    console.log("id", id)
-    
     let formattedFollowers = followers.toLocaleString('en-US');
     return (
         <>

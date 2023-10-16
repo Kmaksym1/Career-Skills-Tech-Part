@@ -14,9 +14,8 @@ export const fetchUsersCards = createAsyncThunk(
   'follow/fetchUsersCards',
   async (page, thunkAPI) => {
     try {
-      
-      const resp = await axios.get(`/users/?limit=3&page=${page}`);
-  
+      const resp = await axios.get(`/users/`);
+      // ?limit=3&page=${page}
       return resp.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);

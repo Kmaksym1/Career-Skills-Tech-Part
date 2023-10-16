@@ -1,19 +1,20 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-
+// import { useNavigate } from 'react-router-dom';
+import backphoto from '../../assets/img/backphoto.jpg'
 export const HomePage = () => { 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     return (
-        <>
-            <p>Home Page</p>
-            <button type="button"
+        <img src={backphoto} alt={"backphoto"}
+        width={"100%"}
+        />
+            
+            /* <button type="button"
                 onClick={() => {
                     navigate('/tweets');
             }}
-            >Tweets</button>
+            >Tweets</button> */
         
         
-        </>
     )
         
 }

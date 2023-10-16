@@ -4,7 +4,7 @@ export const Container = styled.div`
   position: ${({ position }) => position || 'static'};
   padding-left: 10px;
   padding-right: 10px;
-
+margin-top: 50px;
   @media (min-width: 375px) {
     max-width: 375px;
     margin: 0 auto;
@@ -19,6 +19,6 @@ export const Container = styled.div`
   @media (min-width: 1280px) {
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 1280px;
+    max-width: 1200px;
   }
 `;

@@ -19,6 +19,7 @@ html {
     --button-color: #161F37;
     --button-hover-color: #F3F3F3;
   } */
+  
 }
 
 
@@ -61,12 +62,14 @@ body {
   width: 100%;
   height: 100vh;
   /* background-color: var(--background-color); */
-  background-color: var(--bg-color-main-darktheme);
+  /* background-color: var(--bg-color-main-darktheme); */
   scroll-behavior: smooth;
+  background-image: linear-gradient(to bottom right, rgb(127 22 228), #a78ee0);
 }
+/* rgba(255,0,0,1) */
 
 section {
-  padding:  100px 0;
+  padding:  80px 0;
 }
 h1,
 h2,

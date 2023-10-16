@@ -3,30 +3,27 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledLink = styled(Link)`
-    border-radius: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 200px;
-    height: 30px;
-    display: inline-flex;
-    align-items: center;
-    font-size: 30px;
-    gap: 4px;
-    padding: 8px 0;
-    color: black;
-    text-decoration: none;
-    font-weight: 350;
-    text-transform: uppercase;
-    border: 1px solid #ccc;
-    transition: background-color 0.2s ease-in-out;
-    justify-content: center;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
-
+  display: flex;
+  gap: 10px;
+  width: 196px;
+  height: 60px;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: ${props => props.color || '#ebd8ff'};
+  box-shadow: 0px 3.43693px 3.43693px 0px rgba(0, 0, 0, 0.25);
+  color: var(--landing-button-text-color, #373737);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
   &:hover {
-    color: #009cf6;
-    background-color: #f7f7f7;
-    border-color: #009cf6;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #8376da;
+    transform: translateY(-1px);
+    transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
   }
 `;
 
