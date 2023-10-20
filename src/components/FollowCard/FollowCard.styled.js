@@ -33,7 +33,7 @@ export const MidleLine = styled.div`
 z-index: 1;
 position: absolute;
 top: 214px;   
-  width: 380px;
+  width: 375px;
   height: 8px;
   flex-shrink: 0;
   background: #ebd8ff;

@@ -20,12 +20,12 @@ export const UserCards = () => {
   const [fil, setfil] = useState('showall');
   const data = useSelector(selectUsers);
   let pagination = page * 3;
-  let superData = data.slice(0, pagination)
+  let cutedData = data.slice(0, pagination)
   
   const filteredData = (option) => {
       setfil(option)
   }
-  const newData = superData.filter((user) => {
+  const newData = cutedData.filter((user) => {
     if (fil === "showall") {
       return user
       }

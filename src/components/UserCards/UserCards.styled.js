@@ -16,7 +16,7 @@ export const CardWrapper = styled.li`
   z-index: 10;
   padding-top: 175px;
   padding-bottom: 36px;
-  width: 380px;
+  width: 375px;
   height: 460px;
 
   border-radius: 20px;
@@ -29,7 +29,9 @@ export const CardWrapper = styled.li`
   background-size: 76px 22px, 308px 168px, cover;
   flex-shrink: 0;
   background-repeat: no-repeat;
-
+  @media (max-width: 375px) {
+    width: 355px;
+  }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: url(${logo2x}), url(${bgImg2x}),
       linear-gradient(115deg, #471ca9 -0.99%, #5736a3 54.28%, #4b2a99 78.99%);
@@ -68,4 +70,13 @@ export const ButtonLoadMore = styled.button`
     transform: translateY(-1px);
     transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
   }
+  @media (max-width: 375px) {
+    width: 140px;
+  height: 30px;
+  padding: 0px 10px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 117.5px;
+  }
+  
 `;

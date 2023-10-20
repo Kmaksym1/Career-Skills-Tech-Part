@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Select from 'react-select';
+import { SelectContainer } from './dropDownMenu.styled';
 
 const DropDownMenu = ({ flexDirection, filter }) => {
   const optionValue = [
@@ -13,9 +14,8 @@ const DropDownMenu = ({ flexDirection, filter }) => {
     valueContainer: provided => ({
       ...provided,
       display: 'flex',
-      //   flexDirection: flexDirection,
-
-      width: 200,
+          left: "40px",
+      padding: "0px",
     }),
     control: provided => ({
       ...provided,
@@ -24,7 +24,7 @@ const DropDownMenu = ({ flexDirection, filter }) => {
       cursor: 'pointer',
       borderColor: 'transparent',
       boxShadow: 'none',
-      width: 210,
+      width: 200,
     }),
     option: (provided, { isFocused }) => ({
       ...provided,
@@ -49,8 +49,9 @@ const DropDownMenu = ({ flexDirection, filter }) => {
     placeholder: provided => ({
       ...provided,
       color: '#F3F3F3',
-      fontSize: '25px',
-      textTransform: 'uppercase',
+      fontSize: '20px',
+        textTransform: 'uppercase',
+      
     }),
     dropdownIndicator: provided => ({
       ...provided,
@@ -63,16 +64,17 @@ const DropDownMenu = ({ flexDirection, filter }) => {
     indicatorSeparator: provided => ({
       ...provided,
       display: 'none',
-    }),
+      }),
+      input: provided => ({
+        ...provided,
+        display: 'none',
+        width:"10px"
+      }),
   };
 
-  const selectContainer = {
-    position: 'relative',
-    top: '-50px',
-    left: '980px',
-  };
+
   return (
-    <div style={selectContainer}>
+    <SelectContainer >
       <Select
         options={optionValue}
         placeholder="show all"
@@ -84,7 +86,7 @@ const DropDownMenu = ({ flexDirection, filter }) => {
         onMenuOpen={() => setIsOpen(true)}
         onMenuClose={() => setIsOpen(false)}
       />
-    </div>
+    </SelectContainer>
   );
 };
 

@@ -69,7 +69,10 @@ body {
 /* rgba(255,0,0,1) */
 
 section {
-  padding:  80px 0;
+  padding:  20px 0;
+  @media (min-width: 1280px) {
+    padding:  80px 0;
+  }
 }
 h1,
 h2,
