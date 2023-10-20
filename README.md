@@ -1,8 +1,10 @@
 # TWEET CARDS APP | REACT
 
+
 [![ua](https://img.shields.io/badge/lang-ua-blue.svg)](https://github.com/Kmaksym1/Career-Skills-Tech-Part/blob/master/README.ua.md)
 
----
+### This is a simple app, where you can view user cards with interactive buttons.
+--
  Technical stack
 
 ![React](https://img.shields.io/badge/React-%23007ACC.svg?style=for-the-badge&logo=react&logoColor=white)
@@ -16,7 +18,7 @@
 - The project was built using [Create React App](https://github.com/facebook/create-react-app).
 - [mockapi.io](https://mockapi.io/) was used as the `backend`
 - Data is stored in `Local storage`
-- 
+
 ---
  Implemented
 

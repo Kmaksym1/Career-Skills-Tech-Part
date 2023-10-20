@@ -1,6 +1,6 @@
-# TWEET CARDS APP | REACT [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Kmaksym1/Career-Skills-Tech-Part/blob/master/README.md)
+# TWEET CARDS APP | REACT 
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Kmaksym1/Career-Skills-Tech-Part/blob/master/README.md)
 
----
  Технічний стек
 
 ![React](https://img.shields.io/badge/React-%23007ACC.svg?style=for-the-badge&logo=react&logoColor=white)
