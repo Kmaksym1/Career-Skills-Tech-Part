@@ -13,3 +13,18 @@ Language
 ![React Router](https://img.shields.io/badge/React_Router-%23000000.svg?style=for-the-badge&logo=react-router&logoColor=white)
 
 
+## Використані ресурси
+- The project was built using [Create React App](https://github.com/facebook/create-react-app).
+- [mockapi.io](https://mockapi.io/) was used as the `«backend»`
+- Data is stored in `«localstorage»`
+
+### Implemented
+
+1. The `Home` page with a brief description
+2. The `Tweets` page with user cards.
+3. Pagination
+4. The `Back button` to return to the previous page
+5. The `DropDownMenu`for filtering cards by the follow status 
+6. The `Load More` button to render more cards
+7. Redirecting the user in case of navigating to a non-existing `Route`
+8. Information about the follow status is stored in `Local storage`, allowing multiple users to use it simultaneously.
